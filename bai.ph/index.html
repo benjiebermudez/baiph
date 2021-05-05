@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>bai.ph</title>
+</head>
+
+<body>
+
+    <nav id="overlay">
+        <img src="img/close.png" class="close-btn" id="close-menu">
+        
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <span>home already</span>
+            </li>
+            <li>
+                <a href="#">About</a>
+                <span>what about us</span>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <span>at your service</span>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+                <span>just call me maybe</span>
+            </li>
+        </ul>
+
+    </nav>
+
+    <header>
+        <a href="#" class="logo">bai.ph</a>
+        <img src="img/menu.png" style="height: 15px; width: 25px;" class="menu-btn" id="open-menu">
+    </header>
+
+    <section>
+        <h1>I am Paule</h1>
+    </section>
+
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function(){
+
+            overlay.classList.add('show-menu');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function(){
+
+            overlay.classList.remove('show-menu');
+        });
+    </script>
+
+
+
+</body>
+
+</html>
